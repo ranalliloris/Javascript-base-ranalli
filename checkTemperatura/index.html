@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Temperatura</title>
+    </head>
+    <body>
+        <script>
+            let temp=prompt("Inserisci temperatura corporea: ");
+            let messaggio;
+            if(temp>=38)
+            {
+                messaggio="Hai la febbre alta";
+            }
+            else if(temp>=37)
+            {
+                messaggio="Hai la febbre";
+            }
+            else
+            {
+                messaggio="Non hai la febbre";
+            }
+            alert(messaggio);
+
+            let a=5; //int
+            let b="5"; //string
+
+            if(a===b)
+            {
+                alert("i due valori sono uguali");
+            }
+            else
+            {
+                alert("i due valori sono diversi");
+            }
+
+        </script>
+    </body>
+</html>

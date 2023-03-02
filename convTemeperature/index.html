@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversione Temperature</title>
+    </head>
+    <body>
+        <script>
+            let gradiC=parseFloat(prompt("Inserire temperatura in gradi °C (valori maggiori di -273.15): "));
+            let gradiK, gradiF;
+            if(gradiC<-273.15)
+            {
+                console.log("Errore: il valore inserito non è valido");
+            }
+            else
+            {
+                gradiF=(9/5)*gradiC+32;
+                //parseFloat(str) --> trasforma str in float,
+                //ritorna il valore float.
+
+                gradiK=273.15+gradiC;
+                console.log("Gradi °F: "+gradiF);
+                console.log("Gradi °K: "+gradiK);
+                
+            }
+
+        </script>
+    </body>
+</html>

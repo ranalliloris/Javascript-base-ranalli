@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anno Bisestile</title>
+    </head>
+    <body>
+        <script>
+            let anno=prompt("Inserisci anno: ");
+            if(anno%400==0 || (anno%4==0 && anno%100!=0))
+            {
+                alert("L'anno "+anno+" è bisestile");
+            }
+            else
+            {
+                alert("L'anno "+anno+" non è bisestile");
+            }
+        </script>
+    </body>
+</html>
