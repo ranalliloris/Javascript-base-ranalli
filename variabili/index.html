@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabili</title>
+</head>
+<body>
+    <script>
+        //Dichiarazione variabile globale
+        const A=10;
+        //A=A+10; //Errore
+        console.log(A);  
+        //Stampa nella console del browser
+        //Il contenuto di A
+        {
+            //Dichiarazione variabile locale
+            let b=15;
+            console.log(b);
+        }
+        
+
+        let prezzo=prompt("Inserire un prezzo: ");
+        console.log(`Il prezzo inserito è ${prezzo} €` );
+    </script>
+</body>
+</html>

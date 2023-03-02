@@ -1,0 +1,1 @@
+alert("Esecuzione script su file");

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giorni Settimana</title>
+    </head>
+    <body>
+        <script>
+            let giorno;
+            let giornoSett;
+            
+            do
+            {
+                giorno=parseInt(prompt("Inserisci numero giorno settimana: "));
+            }
+             while(giorno<1 || giorno>7);
+            
+               //giorno [1, 7]
+               switch(giorno)
+               {
+                    //if(giorno==1)
+                    case 1: giornoSett="Lunedì";
+                    break; //Chiude le istruzioni di un case
+
+                    case 2: giornoSett="Martedì";
+                    break;
+
+                    case 3: giornoSett="Mercoledì";
+                    break;
+
+                    case 4: giornoSett="Giovedì";
+                    break;
+
+                    case 5: giornoSett="Venerdì";
+                    break;
+
+                    case 6: giornoSett="Sabato";
+                    break;
+
+                    case 7:giornoSett="Domenica";
+                    break;
+
+               }
+               console.log(giornoSett);
+
+               let tipoGiorno;
+               switch(giorno)
+               {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5: tipoGiorno="Feriale";
+                    break;
+
+                    case 6: tipoGiorno="Prefestivo";
+                    break;
+
+                    case 7: tipoGiorno="Festivo";
+               }
+               console.log(tipoGiorno);
+            
+        </script>
+    </body>
+</html>
