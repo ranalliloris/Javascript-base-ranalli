@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saluto Date</title>
+</head>
+<body>
+    <script>
+        let oggi=new Date();
+
+        let h=oggi.getHours();
+
+        if(h>=0 && h<=11)
+        {
+            console.log("Buongiorno");
+        }
+        else if(h>=12 && h<=17)
+        {
+            console.log("Buon Pomeriggio");
+        }
+        else
+        {
+            console.log("Buona sera");
+        }
+
+    </script>
+</body>
+</html>
