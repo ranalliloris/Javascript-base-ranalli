@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oggetto Cane</title>
+    </head>
+    <body>
+        <script>
+            let cane=
+            {
+                nome: "Trilli",
+                razza: "Pastore Tedesco",
+                dataNascita: new Date("2022-04-03"),
+                sesso: 'F',
+                peso:3200,
+                presenzaMicrochip: true,
+                abbaia: function(num)
+                {
+                    for(let i=0; i<num; i++)
+                    {
+                        console.log("bau");
+                    }
+                },
+                corri: function(metri)
+                {
+                    this.peso=this.peso-metri;
+                },
+
+                applicaMicrochip: function()
+                {
+                    this.presenzaMicrochip=true;
+                },
+
+                rimuoviMicrochip: function()
+                {
+                    this.presenzaMicrochip=false;
+                },
+                printInfo: function()
+                {
+                    let str="Nome: "+this.nome+"\n";
+                        str=str+"Razza: "+this.razza+"\n";
+                        str=str+"sesso: "+this.sesso+"\n";
+                        str=str+"peso: "+this.peso;
+                    return str;
+                }
+            }
+            cane.abbaia(5);
+            console.log(cane);
+            cane.rimuoviMicrochip();
+            cane.corri(200);
+            console.log(cane);
+            console.log(cane.printInfo());
+        </script>
+    </body>
+</html>

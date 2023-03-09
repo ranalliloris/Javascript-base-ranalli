@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oggetti</title>
+    </head>
+    <body>
+        <script>
+            let persona=
+            {
+                nome: 'Loris',
+                cognome: 'Ranalli',
+                dataNascita: new Date("1989-12-27"),
+                luogoNascita: 'Lanciano',
+                saluto: function (nome)
+                {
+                    console.log("Ciao sono "+this.nome+" "+this.cognome);
+                },
+                modificaInfo:function(nome, cognome, dataNascita, luogoNascita)
+                {
+                    this.nome=nome;
+                    this.cognome=cognome;
+                    this.dataNascita=dataNascita;
+                    this.luogoNascita=luogoNascita;
+                }
+            };
+
+            console.log("Persona cognome: "+persona.cognome);
+            console.log("Persona nome: "+persona.nome);
+            persona.saluto();
+            persona.modificaInfo("Mario","Rossi",new Date("1993-04-27"),"Roma");
+            persona.saluto();
+
+            persona.professione="Meccanico";
+            console.log(persona);
+            let obj={};
+            obj.chiave=5;
+        </script>
+    </body>
+</html>
