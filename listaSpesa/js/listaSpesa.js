@@ -11,3 +11,10 @@ console.log(liAlimento);
 
 let liAlimento2=document.querySelectorAll(".alimento");
 console.log(liAlimento2);
+
+ulLista.innerHTML+='<li class="alimento">Prosciutto Crudo</li>';
+
+for(let i=0; i<liAlimento.length;i++)
+{
+    liAlimento[i].textContent=liAlimento[i].textContent.toUpperCase();
+}

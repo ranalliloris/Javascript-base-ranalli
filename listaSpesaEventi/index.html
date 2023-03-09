@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista Spesa</title>
+        <style>
+            form div
+            {
+                margin:12px 0px 12px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="">
+            <div>
+                <label for="prodotto">Prodotto</label>
+                <input type="text" id="prodotto" name="prodotto" />
+            </div>
+            <div>
+                <button type="button" value="aggiungi" id="btnAggiungi" name="btnAggiungi">
+                    Aggiungi
+                </button>
+                <button type="reset" id="btnCancella" name="btnCancella" value="btnCancella">
+                    Cancella
+                </button>
+            </div>
+        </form> 
+        <ul id="lista">
+        </ul>
+
+        <script src="js/listaSpesa.js"></script>
+    </body>
+</html>
