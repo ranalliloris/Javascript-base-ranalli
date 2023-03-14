@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrazione Utente</title>
+        <style>
+            form div
+            {
+                margin-bottom: 24px;
+            }
+
+            .error
+            {
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registrazione Utente</h1>
+        <form action="" method="">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username"/>
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password"/>
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"/>
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="eta">Età</label>
+                <input type="number" id="eta" name="eta"/>
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="corso">Corso</label>
+                <select name="corso" id="corso">
+                    <option value="sw">Sviluppo SW</option>
+                    <option value="web">Sviluppo Web</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="button" id="btnRegistra" name="btnRegistra">
+                    Registra
+                </button>
+                <button type="reset" id="bntReset">Cancella</button>
+            </div>
+
+        </form>
+
+        <script src="js/checkForm.js"></script>
+    </body>
+
+</html>

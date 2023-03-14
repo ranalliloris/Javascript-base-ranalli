@@ -1,11 +1,14 @@
 let btnAggiungi=document.getElementById("btnAggiungi");
-btnAggiungi.onclick=aggiungiProdotto; //nome funzione senza parentesi
+//btnAggiungi.onclick=aggiungiProdotto; //nome funzione senza parentesi
+
+btnAggiungi.addEventListener("click",aggiungiProdotto,false);
 
 let btnCancella=document.getElementById("btnCancella");
 btnCancella.onclick=rimuoviTutto;
 
-function aggiungiProdotto()
+function aggiungiProdotto(e)
 {
+    console.log(e.type);
     //seleziono input con id="prodotto"
     let prodotto=document.getElementById("prodotto");
     //seleziono elemento ul con id="lista"
@@ -19,6 +22,7 @@ function aggiungiProdotto()
     {
         listaProdotti[i].ondblclick=rimuoviElemento;
     }
+    e.target.removeEventListener("click",aggiungiProdotto);
 }
 
 function rimuoviTutto()
