@@ -1,5 +1,9 @@
 let username=document.getElementById("username");
-username.addEventListener("blur", checkUsername,false);
+let password=document.getElementById("password");
+
+username.addEventListener("blur", checkUsername, false);
+password.addEventListener("blur", checkPassword, false);
+
 
 function checkUsername(e)
 {
@@ -11,5 +15,17 @@ function checkUsername(e)
     {
         //STAMPARE ERRORE
         pError.textContent="Errore!!! L'username non può contenere spazi.";
+    }
+}
+
+function checkPassword(e)
+{
+    let textPass=password.value; 
+    //textPass=e.target.value;
+    let pError=password.nextElementSibling;
+    pError.textContent="";
+    if(textPass.length<8)
+    {
+        pError.textContent="Errore! La password deve essere di almeno 8 caratteri";
     }
 }
